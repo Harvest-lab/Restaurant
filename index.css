@@ -224,7 +224,7 @@ nav .hamburger .bar {
 }
 
 .forth-page {
-  padding: 6rem 5%;
+  padding: 6rem 5% 5rem;
   text-align: center;
 }
 .forth-page h2 {
@@ -235,7 +235,7 @@ nav .hamburger .bar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.3rem;
-  margin: 3rem;
+  margin-top: 3rem;
   color: white;
 }
 /* If the last row has only one item, make it full width */
@@ -414,7 +414,7 @@ footer a {
 
   .home img {
     margin-top: 70px;
-    width: 400px;
+    width: 100%;
   }
   .second-page .content {
     display: flex;
@@ -427,9 +427,6 @@ footer a {
     line-height: 2.5rem;
     font-weight: 800;
   }
-  .second-page .content .quality {
-    /* background-color: aquamarine; */
-  }
   .second-page .content .qualities {
     gap: 1rem;
   }
@@ -437,10 +434,6 @@ footer a {
   .fifth-page .blogs-articles {
     display: flex;
     flex-direction: column;
-    /* grid-template-columns: repeat(2, 1fr);
-    gap: 2.3rem;
-    margin: 3rem;
-    color: white; */
   }
   .deals-container .price .menu-button,
   .header .menu-button,
