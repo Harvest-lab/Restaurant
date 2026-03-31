@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: hsl(8, 45%, 86%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin-inline: 5px;
+  padding: 8px;
+  color: black;
+  /* background-color: aqua; */
+}
+
+/* .logo {
+  cursor: pointer;
+} */
+
+/* Styling for the hamburger */
+nav .hamburger {
+  display: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-button {
+  padding: 15px 30px;
+  background-color: hsl(25, 92%, 50%);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  padding: 14px 25px;
+  /* background-color: black; */
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.home {
+  padding: 9rem 5% 0;
+  height: 100vh;
+  text-align: center;
+  color: white;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("/images/green-backdrop.jpg");
+  /* to make the image fill the section */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home h1 {
+  margin: 10px 0 18px;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+
+.home-btns {
+  margin-top: 40px;
+}
+
+.home img {
+  margin-top: 70px;
+  width: 500px;
+}
+
+.second-page {
+  padding: 20rem 7% 2rem;
+  text-align: center;
+}
+
+.second-page h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+
+.second-page img {
+  width: 400px;
+}
+
+.second-page .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 4rem;
+}
+
+.second-page .content .qualities {
+  text-align: start;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px;
+  /* background-color: aquamarine; */
+}
+
+.second-page .content .qualities .quality {
+  /* background-color: aqua; */
+  padding: 10px;
+
+  display: flex;
+}
+.quality .quality-text {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.second-page .content .qualities .quality i {
+  background-color: hsl(8, 45%, 86%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* padding: 6px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.second-page .content .qualities .quality h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+  /* background-color: brown; */
+}
+.second-page .content .qualities .quality p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.second-page .content .image {
+  flex: 1;
+  text-align: right;
+  /* background-color: purple; */
+}
+
+.second-page .content .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.third-page {
+  text-align: center;
+  background-color: hsl(55, 68%, 95%);
+  padding: 6rem 5% 5rem;
+}
+
+.third-page h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.third-page .card-container .card img {
+  width: 200px;
+  /* background-color: aqua; */
+  display: block;
+  margin: 0 auto;
+}
+.third-page .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 50px;
+}
+.third-page .card-container .card {
+  text-align: start;
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+.third-page .card-container .card p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+.third-page .card-container .card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forth-page {
+  padding: 6rem 5%;
+  text-align: center;
+}
+.forth-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+.forth-page .deals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.3rem;
+  margin: 3rem;
+  color: white;
+}
+/* If the last row has only one item, make it full width */
+.deal:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+.forth-page .deals-container .deal {
+  text-align: start;
+  padding: 40px 40px 0;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.forth-page .deals-container .deal h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  /* background-color: antiquewhite; */
+}
+.forth-page .deals-container .deal li {
+  /* background-color: aqua; */
+  list-style: inside;
+  margin: 13px 0;
+  padding-left: 0;
+}
+.forth-page .deals-container .deal .price {
+  margin: 30px 0 0;
+}
+.forth-page .deals-container .deal .deal-duo {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.forth-page .deals-container .deal .deal-duo img {
+  width: 63%;
+  margin-right: -20px; /* slight overlap */
+  margin-left: -10px; /* slight overlap */
+  transform: translateY(70px);
+  /* margin-top: 0; */
+}
+
+.fifth-page {
+  background-color: hsl(55, 68%, 95%);
+  padding: 6rem 5% 5rem;
+}
+.fifth-page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fifth-page .header h2 {
+  font-size: 2.2rem;
+}
+.fifth-page .header .second-order-btn {
+  padding: 15px 25px;
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.fifth-page .blogs-articles {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.fifth-page .blogs-articles .article {
+  flex: 1;
+}
+/* height for the long article */
+.fifth-page .blogs-articles .article.blog img {
+  height: 380px;
+}
+.fifth-page .blogs-articles .blogs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.fifth-page .blogs-articles .blog {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fifth-page .blogs-articles .blog img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.fifth-page .blogs-articles .blog .blog-body {
+  margin: 25px 20px 25px;
+}
+.fifth-page .blogs-articles .blog .blog-body h3 {
+  line-height: 25px;
+  margin: 10px 0;
+}
+
+footer {
+  padding: 6rem 5%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
+}
+footer input {
+  padding: 10px 25px;
+  margin: 10px 0;
+  border: 1px solid hsl(0, 0%, 30%);
+  border-radius: 50px;
+}
+footer p,
+footer li,
+footer a {
+  margin-top: 13px;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  nav .nav-menu {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: hsl(8, 45%, 86%);
+    padding: 4rem 0;
+    text-align: center;
+    z-index: 98;
+
+    /* To move it 100% to the right */
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  nav .menu-button {
+    display: none;
+  }
+
+  nav .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  nav .nav-menu a {
+    display: block;
+    margin: 1rem 0;
+    padding: 10px 0;
+    font-size: 1.7rem;
+  }
+
+  nav .hamburger {
+    display: block; /* To make the hamburger show */
+    z-index: 100;
+    position: relative;
+  }
+
+  /* styling for the hamburger when it's active */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .home h1 {
+    margin: 0 0 18px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .home img {
+    margin-top: 70px;
+    width: 400px;
+  }
+  .second-page .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+  .second-page h2 {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+  }
+  .second-page .content .quality {
+    /* background-color: aquamarine; */
+  }
+  .second-page .content .qualities {
+    gap: 1rem;
+  }
+}
