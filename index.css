@@ -335,8 +335,8 @@ nav .hamburger .bar {
 footer {
   padding: 6rem 5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* gap: 2rem; */
 }
 footer input {
   padding: 10px 25px;
@@ -432,5 +432,30 @@ footer a {
   }
   .second-page .content .qualities {
     gap: 1rem;
+  }
+  .forth-page .deals-container,
+  .fifth-page .blogs-articles {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2, 1fr);
+    gap: 2.3rem;
+    margin: 3rem;
+    color: white; */
+  }
+  .deals-container .price .menu-button,
+  .header .menu-button,
+  .fifth-page .header .second-order-btn {
+    padding: 10px 10px;
+    font-size: 11px;
+  }
+  .blog-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
