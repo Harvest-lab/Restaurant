@@ -96,7 +96,11 @@ nav .hamburger .bar {
 }
 
 .home-btns {
-  margin-top: 40px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .home img {
@@ -411,10 +415,12 @@ footer a {
     font-size: 2.5rem;
     line-height: 3rem;
   }
-
+  .home-btns {
+    flex-direction: column;
+  }
   .home img {
     margin-top: 70px;
-    width: 100%;
+    width: 90%;
   }
   .second-page .content {
     display: flex;
@@ -442,9 +448,7 @@ footer a {
     font-size: 11px;
   }
   .blog-btns {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+    display: none;
   }
   footer {
     display: flex;
