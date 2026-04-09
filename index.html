@@ -9,25 +9,28 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
-    <title>Restaurant Website</title>
+    <title>Eden's Plate</title>
+    <link rel="shortcut icon" href="images/logomark.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Navigation -->
     <nav>
-      <a class="logo" href="#">Logo</a>
+      <a class="logo" href="#"
+        ><img src="images/Logo.png" alt="Restaurant's logo"
+      /></a>
       <button class="hamburger" id="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
       <ul class="nav-menu" id="menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Article</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#harve">Menu</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="menu-button" href="#">See Menu</button>
+      <button class="menu-button" href="#harve">View Menu</button>
     </nav>
 
     <!-- Home -->
@@ -37,11 +40,11 @@
         Wonderful Eating Experience
       </h1>
       <p>
-        The simplicity and satisfaction of ordering comfort food, perfect for
-        engaging visitors quickly
+        Freshly prepared native delicacies and healthy meals delivered straight
+        to your door. Experience the taste of home, simplified.
       </p>
       <div class="home-btns">
-        <a class="menu-button" href="#">See Menu</a>
+        <a class="menu-button" href="#">View Menu</a>
         <a class="order-btn" href="#">Order Now</a>
       </div>
 
@@ -49,7 +52,7 @@
     </section>
 
     <!-- About section 1 -->
-    <section class="second-page">
+    <section class="second-page" id="about">
       <p>Fast food delivery service</p>
       <h2>
         Fast, Reliable and Delicious - <br />
@@ -98,8 +101,8 @@
     </section>
 
     <!-- About section 2 -->
-    <section class="third-page">
-      <h2>See What's On the Plate Menu 🔥🔥</h2>
+    <section class="third-page" id="services">
+      <h2>Our Nigerian Specials</h2>
       <p>
         Discover what's on the plate our fast food menu serves, bold finances,
         quick services, and delicious options for every craving
@@ -110,9 +113,9 @@
           <img src="images/fufu-egusi.png" alt="" />
           <h4>Fufu & Egusi soup</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            debitis doloremque similique aliquid perspiciatis itaque placeat
-            beatae
+            Our signature melon seed soup, slow-cooked with fresh spinach, local
+            spices, and your choice of protein. Perfectly paired with smooth,
+            fluffy fufu for a truly authentic taste of home.
           </p>
           <div class="price">
             <button class="menu-button">ORDER NOW</button>
@@ -124,9 +127,9 @@
           <img src="images/vegetable-soup.png" alt="" />
           <h4>Pounded Yam & Vegetable Soup</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            debitis doloremque similique aliquid perspiciatis itaque placeat
-            beatae
+            A rich, vibrant medley of fresh green vegetables and aromatic
+            peppers, garnished with ponmo and dried fish. Served alongside
+            pounded yam that is as smooth as silk.
           </p>
           <div class="price">
             <button class="menu-button">ORDER NOW</button>
@@ -136,11 +139,11 @@
         <!-- Third food -->
         <div class="card">
           <img src="images/Amala-Ewedu-2.png" alt="" />
-          <h4>Egusi soup</h4>
+          <h4>Amala & Ewedu</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            debitis doloremque similique aliquid perspiciatis itaque placeat
-            beatae
+            A classic Ibadan favorite. Silky Amala served with a trio of
+            textures: slimy Ewedu, bold Gbegiri (bean soup), and a rich, spicy
+            palm oil stew.
           </p>
           <div class="price">
             <button class="menu-button">ORDER NOW</button>
@@ -151,7 +154,7 @@
     </section>
 
     <!-- About section 3 -->
-    <section class="forth-page">
+    <section class="forth-page" id="harve">
       <h2>Hot Meals, Hotter Deals</h2>
       <p>
         From family-sized meals to solo meals, find the perfect offer for your
@@ -162,8 +165,8 @@
         <div class="deal" style="background-color: hsl(191, 73%, 23%)">
           <h3>Spicy Duo Deal</h3>
           <ul>
-            <li>1 Afang and 3 fufu</li>
-            <li>1 Banga and 3 starch</li>
+            <li>2 Indomies, 2 boiled eggs and 1 drum stick</li>
+            <li>Jollof rice, 3 eggs, 1 ponmo and plantains</li>
           </ul>
           <div class="price">
             <button class="menu-button">ORDER NOW</button>
@@ -176,10 +179,10 @@
         </div>
         <!-- second hot deal -->
         <div class="deal" style="background-color: hsl(80, 61%, 34%)">
-          <h3>Cheese Lovers Pair</h3>
+          <h3>The Campus Classic</h3>
           <ul>
-            <li>1 medium cheese burger</li>
-            <li>1 jazzy hamburger</li>
+            <li>Jollof rice with pieces of meat</li>
+            <li>2 Indomies, 4 boiled eggs and 1 turkey</li>
           </ul>
           <div class="price">
             <button class="menu-button">ORDER NOW</button>
@@ -192,10 +195,10 @@
         </div>
         <!-- third hot deal -->
         <div class="deal" style="background-color: hsl(157, 67%, 12%)">
-          <h3>Meat Feast Combo</h3>
+          <h3>The Urban Duo</h3>
           <ul>
-            <li>1 bucket of meat</li>
-            <li>1 goat meat pepper soup</li>
+            <li>Jollof rice with pieces of meat</li>
+            <li>Jollof rice, 3 eggs, 1 ponmo and plantains</li>
           </ul>
           <div class="price">
             <button class="menu-button">ORDER NOW</button>
@@ -210,11 +213,11 @@
     </section>
 
     <!-- About section 4 -->
-    <section class="fifth-page">
+    <section class="fifth-page" id="articles">
       <div class="header">
         <h2>Our Blogs & Articles</h2>
         <div class="blog-btns">
-          <button class="menu-button">SEE MENU</button>
+          <button class="menu-button">VIEW MENU</button>
           <button class="second-order-btn">ORDER NOW</button>
         </div>
       </div>
@@ -231,10 +234,9 @@
               for our customers
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              minus quo unde inventore excepturi illum? Molestiae maiores
-              mollitia libero fugit iste quas, hic quibusdam neque similique,
-              aspernatur, quos iusto porro!
+              Explore the art of the Delta. We share the secrets behind
+              achieving the perfect 'wobble' in your starch and the rich, oily
+              consistency of a traditional Banga soup.
             </p>
           </div>
         </article>
@@ -280,22 +282,22 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="contact">
       <div class="footer-part footer-logo">
         <a>LOGO</a>
         <p>
           Food that's delivered fresh, healthy and delicious<br />
-          meal straight to your door step daily
+          Meal straight to your doorstep daily
         </p>
       </div>
       <div class="footer-part">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Article</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#harve">Menu</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-part">

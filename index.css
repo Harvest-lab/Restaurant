@@ -7,6 +7,7 @@
   border: none;
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -34,9 +35,12 @@ nav ul li a {
   /* background-color: aqua; */
 }
 
-/* .logo {
+.logo {
   cursor: pointer;
-} */
+}
+.logo img {
+  width: 100px;
+}
 
 /* Styling for the hamburger */
 nav .hamburger {
@@ -422,6 +426,9 @@ footer a {
     margin-top: 70px;
     width: 90%;
   }
+  /* .second-page {
+    padding: 10rem 7% 2rem;
+  } */
   .second-page .content {
     display: flex;
     flex-direction: column;
